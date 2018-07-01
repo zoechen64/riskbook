@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.6.28)  1 JUL 2018 09:42
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.6.28)  1 JUL 2018 10:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1318,7 +1318,7 @@ Writing index file test01.idx
 LaTeX Warning: Unused global option(s):
     [utf8].
 
-(./test01.aux (./angiosperms.aux))
+(./test01.aux)
 \openout1 = `test01.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -1456,13 +1456,17 @@ LaTeX Info: Redefining \nameref on input line 25.
 \@outlinefile=\write4
 \openout4 = `test01.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12.045> on input line 40.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 40.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 40.
- [1
+[1
 
 
 
@@ -1479,20 +1483,16 @@ able
 
 ] [7] [8
 
-] (./test01.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.53937> on input line 6.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 6.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 6.
+]
 
-[9])
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write5
 \openout5 = `test01.toc'.
 
- [10] [1
+[9] [10
 
+] [1
 
 ] [2]
 第一章
@@ -1533,6 +1533,9 @@ No file angiosperms.tex.
 
 ]
 附录 A
+
+LaTeX Warning: Citation `DK1' on page 13 undefined on input line 149.
+
 [13] [14
 
 ]
@@ -1554,16 +1557,29 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
 (./angiosperms.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 194.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
-Package rerunfilecheck Info: File `test01.out' has not changed.
-(rerunfilecheck)             Checksum: DA7566DE19600D1D07A161B6DBDCBCEC.
+
+
+Package rerunfilecheck Warning: File `test01.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `test01.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E
+(rerunfilecheck)             After:  DA7566DE19600D1D07A161B6DBDCBCEC.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
  ) 
 Here is how much of TeX's memory you used:
- 23808 strings out of 492969
- 480310 string characters out of 6137283
- 554943 words of memory out of 5000000
- 27602 multiletter control sequences out of 15000+600000
- 536688 words of font info for 67 fonts, out of 8000000 for 9000
+ 23784 strings out of 492969
+ 479897 string characters out of 6137283
+ 553041 words of memory out of 5000000
+ 27586 multiletter control sequences out of 15000+600000
+ 535756 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  57i,6n,71p,533b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
 
