@@ -1,35 +1,38 @@
-%\documentclass[11pt]{book} %???????
-%\usepackage{CJK}               %??CJK??
-%\begin{document}               %begin?end????
-%\begin{CJK}{UTF8}{song}        %??CJK??
-%test for english,试一下
-%
-%
-%\renewcommand\contentsname{目录}
-%\tableofcontents
-%\section{第一章 概论}
-%this is one
-%\subsection{第一节 基本概念}
-%是不是
-%\end{CJK}
-%\end{document}
-
-\documentclass[12pt,oneside,openany,a4paper]{book}
-\usepackage{CJK}
+\documentclass[12pt]{book}
+\usepackage{CJKutf8}%中文支持
+\usepackage{indentfirst}%设置段落缩进.如果没有,section后面正文则顶格显示.不缩进.
+\linespread{1.5}%以將行距加大為1.5倍:
 \usepackage{amsmath}
-\usepackage{cases}
-\usepackage[bf,small,center,indentafter,pagestyles]{titlesec}
-\usepackage{CJKpunct}
-\usepackage{CJKnumb}
-\hoffset=1cm\voffset=-1cm
-\textwidth=12.5cm \textheight=22cm
+\usepackage{amssymb}
+\title{}%自行添加
+\author{}
+\date{2016.9-2016.12}
+
+
 \begin{document}
-\begin{CJK*}{GBK}{song}
-\titleformat{\chapter}[hang]{\centering\LARGE\bfseries}{\chaptername}{1em}{}
-\renewcommand{\chaptername}{第\CJKnumber{\thechapter}章}
-\renewcommand{\contentsname}{目\quad 录}
+\begin{CJK*}{UTF8}{gbsn}%中文支持
+\maketitle
+\thispagestyle{empty} % 当前页不显示页码
+\newpage
+
+%\pagestyle{headings}
+\setcounter{page}{1}
+\pagenumbering{Roman}
+
+
+\newpage
+
 \tableofcontents
-\chapter{绪论}
-Blabla……
-\end{CJK*}
-\end{document}
+\newpage
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\part{主题}
+\chapter{章节}
+\section{节}
+
+
+\newpage  %要生成目录,需要添加这个\newpage
+\end{CJK*}%中文支持
+\end{document}  
